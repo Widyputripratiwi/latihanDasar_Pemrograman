@@ -1,0 +1,19 @@
+print("====== Program Nilai ======")
+skor = int(input("Masukkan skor: "))
+if skor >= 90 :
+    Nilai_Huruf = "A"
+    Predikat = "Dengan Pujian"
+elif skor >= 80 :
+    Nilai_Huruf = "B"
+    Predikat = "Sangat Memuaskan"
+elif skor >= 70 :
+    Nilai_Huruf = "C"
+    Predikat = "Memuaskan"
+elif skor >= 60 :
+    Nilai_Huruf = "D"
+    Predikat = "Tidak Memuaskan"
+else:
+    Nilai_Huruf = "E"
+    Predikat = "Tidak LULUS"
+print("Nilai Anda: ", Nilai_Huruf)
+print("Predikat Anda: ", Predikat)
