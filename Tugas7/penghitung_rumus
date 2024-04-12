@@ -1,0 +1,42 @@
+def hitung_luas_segitiga():
+  """ Menghitung luas segitiga """
+  alas = float(input("Masukkan alas segitiga: "))
+  tinggi = float(input("Masukkan tinggi segitiga: "))
+  luas = 0.5 * alas * tinggi
+  print(f"Luas segitiga: {luas:.2f}")
+
+def hitung_luas_persegi_panjang():
+  """ Menghitung luas persegi panjang """
+  panjang = float(input("Masukkan panjang persegi panjang: "))
+  lebar = float(input("Masukkan lebar persegi panjang: "))
+  luas = panjang * lebar
+  print(f"Luas persegi panjang: {luas:.2f}")
+
+def tentukan_ganjil_genap():
+  """ Menentukan angka ganjil dan genap """
+  angka = int(input("Masukkan angka: "))
+  if angka % 2 == 0:
+    print(f"{angka} adalah bilangan genap.")
+  else:
+    print(f"{angka} adalah bilangan ganjil.")
+
+while True:
+  print("\n Menu Aplikasi Penghitung Rumus:")
+  print("1. Hitung luas segitiga")
+  print("2. Hitung luas persegi panjang")
+  print("3. Menentukan angka ganjil dan genap")
+  print("4. Quit")
+
+  pilihan = input("Masukkan pilihan Anda: ")
+
+  if pilihan == "1":
+    hitung_luas_segitiga()
+  elif pilihan == "2":
+    hitung_luas_persegi_panjang()
+  elif pilihan == "3":
+    tentukan_ganjil_genap()
+  elif pilihan == "4":
+    print("Terima kasih telah menggunakan aplikasi ini!")
+    break
+  else:
+    print("Pilihan tidak valid. Silakan masukkan angka 1-4.")
